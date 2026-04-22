@@ -1,4 +1,3 @@
-# toml-docs-start main
 [main]
     separator = "-"
     description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
@@ -8,10 +7,10 @@
     footerBelowFold = false
     loading = "lazy"
     breakpoint = "md"
-    titleCase = false
-    [main.padding]
-        x = 4
-        y = 4
+    [main.colorMode]
+        enabled = true
+        modes = ["light", "dark"]
+        toggle = false
     [main.internalLinks]
         validate = true
         pretty = false
@@ -20,156 +19,34 @@
         tab = false
     [main.build]
         transpiler = "dartsass"
-        silenceDeprecations = true
-    [main.colorMode]
-        enabled = true
-        modes = ["light", "dark"]
-        toggle = false
-    [main.cards]
-        linkIcon = false
-# toml-docs-end main
 
-# toml-docs-start icons
-[icons]
-    # Color mode toggle
-    colorModeLight       = "fas sun"
-    colorModeDark        = "fas moon"
-    # Navbar
-    navbarLanguage       = "fas globe"
-    navbarOverflow       = "fas ellipsis"
-    navbarVersionCheck   = "fas check"
-    # Pagination
-    paginationFirst      = "fas angles-left"
-    paginationPrev       = "fas angle-left"
-    paginationNext       = "fas angle-right"
-    paginationLast       = "fas angles-right"
-    # Other navigation
-    breadcrumbBack       = "fas angle-left"
-    pageNavPrev          = "fas arrow-left"
-    pageNavNext          = "fas arrow-right"
-    # Content
-    tocSort              = "fas sort"
-    cardReadMore         = "fas chevron-right"
-    cardLinkIcon         = "fas arrow-right"
-    externalLink         = "fas up-right-from-square"
-    testimonialNext      = "fas chevron-right"
-    testimonialQuote     = "fas quote-right"
-    headingAnchor        = "fas link"
-    notFoundPage         = "fas link-slash"
-    sharingWebshare      = "fas share-nodes"
-    sharingDownload      = "fas download"
-    # Sidebar
-    sidebarCollapse      = "fas angles-left"
-    sidebarSecondary     = "fas angle-down"
-    # Form
-    formSubmitButton     = "fa paper-plane"
-    formSubmittedIcon    = "fa envelope"
-    [icons.admonition]
-        note       = "fas circle-info"
-        info       = "fas circle-info"
-        tip        = "fa lightbulb"
-        important  = "fas exclamation"
-        warning    = "fas triangle-exclamation"
-        caution    = "fa hand"
-    [icons.release]
-        deprecated = "fas trash-can"
-        feature    = "fas rocket"
-# toml-docs-end icons
-
-# toml-docs-start images
-[images]
-    [images.cloudinary]
-        host = "cloudinary"
-    [images.imagekit]
-        host = "imagekit"
-    [images.imgix]
-        host = "imgix"
-# toml-docs-end images
-
-# toml-docs-start videos
-[videos]
-    [videos.cloudinary]
-        host = "cloudinary"
-        account = "demo"
-    [videos.vimeo]
-        host = "vimeo"
-    [videos.youtube]
-        host = "youtube"
-# toml-docs-end videos
-
-[dam]
-    videoCodecs = [
-        "webm/vp9",
-        "mp4/h265",
-        "mp4"
-    ]
-
-# toml-docs-start debugging
 [debugging]
     showJS = false
     showSCSS = false
     purgeHTMLComments = false
-    includeSVGOrigin = true
-# toml-docs-end debugging
 
-# toml-docs-start docs
 [docs]
     github = "https://github.com/gethinode/hinode"
     release = "https://github.com/gethinode/hinode/releases/tag/"
     checkVersion = false
-# toml-docs-end docs
 
-# toml-docs-start home
-[home]
-    # sections = ["posts"]
-    fullCover = false
-    centerHeadline = false
-    style = ""
-    [home.feature]
-        orientation = "horizontal"
-        color = "primary"
-        width = 4
-        align = "start"
-# toml-docs-end home
-
-# toml-docs-start navigation
 [navigation]
     anchor = true
     logo = "/img/logo_icon.svg"
-    logo-mode = false
-    logo-align = "center"
-    logo-height = 30
     color = "body"
     fixed = true
-    overlay = false
-    overlayMode = "dark"
-    horizontal = false
-    offset = "5.7rem"
+    offset = "5.5rem"
     breadcrumb = true
     toc = true
     sidebar = true
     size = "md"
-    startLevel = 2
-    endLevel = 3
-    maxNumHeadings = 9
-    [navigation.padding]
-        x = 4
-        y = 4
     [navigation.search]
         enabled = true
-        modal = true
-# toml-docs-end navigation
+        modal = false
 
-# toml-docs-start messages
 [messages]
     placement = "bottom-right"
-# toml-docs-end messages
 
-[pages]
-    readingTime = true
-    wordCount = true
-
-# toml-docs-start sharing
 [sharing]
     enabled = true
     sort = "weight"
@@ -206,41 +83,28 @@
     icon = "fas link"
     weight = 50
     clipboard = true
-# toml-docs-end sharing
 
 [favicon]
     logo = "img/favicon.png"
     sizes = [16, 32, 48]
 
-# toml-docs-start theme-colors
 [style]
-    primary = "#d43900"
-    secondary = "#6c757d"
-    success = "#198754"
-    info = "#0dcaf0"
-    warning = "#ffc107"
-    danger = "#dc3545"
-    light = "#f8f9fa"
-    dark = "#212529"
-# toml-docs-end theme-colors
+    primary = "#cba6f7"   # Catppuccin Mocha: Mauve
+    secondary = "#6c7086" # Catppuccin Mocha: Overlay0
+    success = "#a6e3a1"   # Catppuccin Mocha: Green
+    info = "#89dceb"      # Catppuccin Mocha: Sky
+    warning = "#f9e2af"   # Catppuccin Mocha: Yellow
+    danger = "#f38ba8"    # Catppuccin Mocha: Red
+    light = "#eff1f5"     # Catppuccin Latte: Base (for light contrast)
+    dark = "#1e1e2e"      # Catppuccin Mocha: Base (for dark contrast)
     themeOpacity = "10"
     darkModeShade = "20%"
     darkModeTint = "40%"
-# toml-docs-start font
     themeFont = "Inter"
     # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
     themeFontPath = "/fonts" # local path
-    themeFontPreload = "/fonts/inter-v12-latin-regular.woff2"
-    fontSizeBase = "1rem" # assumes the browser default, typically '16px'
-# toml-docs-end font
-# toml-docs-start build
-    purge = false
-# toml-docs-end build
-  [style.title]
-    size = 4
-    arrangement = "above"
-    headingStyle = "display"
-    contentStyle = "lead text-muted"
+    fontSizeBase = "1rem"
+    purge = true
 
 [schema]
     type = "Organization"
@@ -270,38 +134,3 @@
 
 [links]
     hinode = "https://gethinode.com"
-
-# toml-docs-start headers
-[headers]
-  [headers.netlify]
-    source = "netlify.toml"
-# toml-docs-end headers
-
-# toml-docs-start csp
-[modules.hinode.csp]
-    style-src = ["www.youtube.com"]
-    font-src = ["fonts.gstatic.com"]
-    frame-src = [
-        "player.cloudinary.com",
-        "www.youtube-nocookie.com",
-        "www.youtube.com"
-    ]
-    img-src = [
-        "data:",
-        "*.imgix.net",
-        "*.imagekit.io",
-        "*.cloudinary.com",
-        "i.ytimg.com"
-    ]
-# toml-docs-end csp
-
-[modules.vimeo]
-    local = true
-    integration = "optional"
-    state = "async"
-    url = "https://player.vimeo.com/api/player.js"
-
-[modules.vimeo.csp]
-    frame-src = ["player.vimeo.com"]
-    img-src = ["i.vimeocdn.com"]
-    script-src = ["player.vimeo.com"]
