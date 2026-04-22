@@ -54,7 +54,7 @@ jobs:
             ${{ runner.os }}-hugo-
 
       - name: Build production website
-        run: npm run build -- --baseURL "https://blairtcg.github.io/passkeys.dev/"
+        run: npm run build -- --baseURL "https://blairtcg.github.io/hinode/"
         env:
           HUGO_CACHEDIR: /tmp/hugo_cache
           HUGO_ENV: production
