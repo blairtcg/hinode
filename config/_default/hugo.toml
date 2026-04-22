@@ -1,11 +1,11 @@
 # toml-docs-start main
-title = "Hinode"
-copyright = "Copyright © 2026 Hinode Team"
+title = "Blair"
+copyright = "Copyright © 2026 Blair Team"
 enableGitInfo = true
 # toml-docs-end main
 
 # additional settings
-baseURL = "https://example.com/"
+baseURL = "https://blairtcg.github.io/hinode/"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
