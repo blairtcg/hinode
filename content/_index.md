@@ -1,4 +1,4 @@
 ---
-title: Welcome to Hinode!
-description: A clean documentation and blog theme for your Hugo site based on Bootstrap 5.
+title: Welcome to Blair's website!
+description: Here you can find all the essentials to understand how to play Blair.
 ---
